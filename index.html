@@ -6,8 +6,78 @@
     <title>Tea house with daisyUI</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+      .manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  
+}
+    </style>
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <!-- fontawesome -->
+     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
+<body class="manrope">
+    <header class="container mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          
+          <div>
+            <h1 class="lg:text-7xl lg:font-extrabold font-bold text-4xl">It's good <br> 
+              tea time at The <br> 
+              Tea House</h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+
+          <div>
+            <img
+            src="images/banner.png"
+            class="lg:max-w-sm  " />
+
+            <div class="flex items-center gap-5 drop-shadow-lg p-5 bg-white w-60 -mt-16 rounded-lg">
+              <i class="fa-solid fa-star text-3xl text-amber-400"></i>
+              <div>
+                <h3>5.00</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </header>
+    <main>
+      <!-- featured sections -->
+       <section class="text-center my-24">
+        <h3 class="text-5xl font-extrabold mb-5">Our Featured Products</h3>
+        <p class="max-w-4xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+
+       </section>
+
+    </main>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
